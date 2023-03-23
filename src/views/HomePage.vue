@@ -1,28 +1,29 @@
 <template>
-  <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Blank</ion-title>
-      </ion-toolbar>
-    </ion-header>
+  <IonPage>
+    <IonHeader :translucent="true">
+      <IonToolbar>
+        <IonTitle>Blank</IonTitle>
+      </IonToolbar>
+    </IonHeader>
 
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
-        </ion-toolbar>
-      </ion-header>
+    <IonContent :fullscreen="true">
+      <IonHeader collapse="condense">
+        <IonToolbar>
+          <IonTitle size="large">Blank</IonTitle>
+        </IonToolbar>
+      </IonHeader>
 
       <div id="container">
         <strong>Ready to create an app?</strong>
         <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
       </div>
-    </ion-content>
-  </ion-page>
+    </IonContent>
+  </IonPage>
 </template>
 
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+
 </script>
 
 <style scoped>
