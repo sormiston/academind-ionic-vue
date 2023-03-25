@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
@@ -24,10 +24,16 @@ import '@ionic/vue/css/display.css';
 import './theme/variables.css';
 import './theme/main.css';
 
-const app = createApp(App)
-  .use(IonicVue)
-  .use(router);
-  
+/* Global components */
+import BasePage from '@/components/base/BasePage.vue';
+
+const app = createApp(App);
+
+app.use(IonicVue);
+app.use(router);
+
+app.component('BasePage', BasePage);
+
 router.isReady().then(() => {
   app.mount('#app');
 });
